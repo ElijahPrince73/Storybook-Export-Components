@@ -1,0 +1,64 @@
+﻿/* FULL CALENDAR */
+
+.fc-event,
+.fc-event-dot {
+    background-color: $blue;
+    border: 1px solid $blue;
+}
+
+
+/* Colors
+--------------------------------------------------------------------------------------------------*/
+
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-content, /* for gutter border */
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-list-heading td {
+    border-color: #ddd;
+}
+
+.fc-unthemed .fc-popover {
+    background-color: #fff;
+}
+
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-popover .fc-header,
+.fc-unthemed .fc-list-heading td {
+    background: #eee;
+}
+
+.fc-unthemed .fc-popover .fc-header .fc-close {
+    color: #666;
+}
+
+.fc-unthemed td.fc-today {
+    background: #fcf8e3;
+}
+
+.fc-highlight { /* when user is selecting cells */
+    background: #bce8f1;
+    opacity: .3;
+}
+
+.fc-bgevent { /* default look for background events */
+    background: rgb(143, 223, 130);
+    opacity: .3;
+}
+
+.fc-nonbusiness { /* default look for non-business-hours areas */
+    /* will inherit .fc-bgevent's styles */
+    background: #d7d7d7;
+}
+
+/* Expanding
+--------------------------------------------------------------------------------------------------*/
+
+.expanding {
+    overflow: hidden !important;
+}

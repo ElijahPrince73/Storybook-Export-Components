@@ -1,0 +1,112 @@
+﻿.sidebar {
+  color: $white;
+  background-color: $gray-2;
+
+  @include media-breakpoint-down(xs) {
+    overflow: hidden;
+  }
+
+  padding: 0;
+}
+
+.sidebar-bottom {
+  @include media-breakpoint-up(sm) {
+    background-color: $gray-2;
+    // make the sidebar extend to bottom of page in breakpoints >= sm
+    // Bootstrap 4 breakpoints: http://stackoverflow.com/a/37485864
+    // Margin / padding trick: http://stackoverflow.com/a/8451485
+    margin-bottom: -100vh;
+    padding-bottom: 100vh;
+    overflow-y: hidden;
+  }
+}
+
+.sidebar-topic,
+.sidebar-title {
+  background-color: $gray-1;
+  padding: 0.75rem 0 0.75rem 1.5rem;
+  height: 48px;
+  text-transform: capitalize;
+}
+
+.sidebar-topic h4,
+.sidebar-title h4 {
+  position: absolute;
+}
+
+.sidebar-topic h4,
+.sidebar-title h4 {
+  left: 58px;
+}
+
+.sidebar-topic:hover,
+.sidebar-topic-active,
+.sidebar-title:hover,
+.sidebar-title-active {
+  background-color: $black;
+  border-left: 4px solid $brand-accent;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.sidebar-padding-top {
+  background-color: $gray-1;
+  padding-top: $spacer * 0.5;
+}
+
+.sidebar-padding-bottom {
+  background-color: $gray-1;
+  padding-bottom: 0.75rem;
+}
+
+.sidebar-topic-name {
+  position: relative;
+  display: inline;
+}
+
+.wrapper--sidebar {
+  position: relative;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+}
+
+.nav--sidebar {
+  display: flex;
+  flex: 1 100%;
+  margin-top: 3.15rem;
+  background-color: #414749;
+}
+
+.list--sidebar {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item--sidebar {
+  display: block;
+  border-bottom: 0.1rem solid #646a6c;
+
+  &:first-child {
+    border-top: 0.1rem solid #646a6c;
+  }
+}
+
+.link--sidebar {
+  text-decoration: none;
+}
+
+.heading--sidebar {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  background-color: #2d3335;
+  color: #fff;
+  transition: all 250ms ease;
+
+  .link--sidebar:hover & {
+    background-color: #152a33;
+  }
+}

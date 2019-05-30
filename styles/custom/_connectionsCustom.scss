@@ -1,0 +1,314 @@
+﻿// keeps scroll bar constant so it doesn't jerk when it appears
+html {
+    overflow-y: scroll;
+}
+
+.btn-ghost {
+    box-shadow: inset 0 1px 0 rgba($white,0.2), 0 1px 1px rgba($black,0.8);
+    font-weight: bold;
+    border: 2px solid;
+    transition: all 0.33s ease-in-out;
+}
+
+.btn-ghost:hover {
+    box-shadow: inset 0 1px 0 rgba($white,0.2), 0 1px 1px rgba($black,0.8);
+}
+
+.placeholder-right ::-webkit-input-placeholder {
+    text-align: right;
+}
+
+.placeholder-right input:-moz-placeholder {
+    text-align: right;
+}
+
+.icons-font {
+    font-family: 'Ionicons', $font-family-sans-serif;
+}
+
+// Overriding default text selection on most browsers to match brand colors
+// https://css-tricks.com/overriding-the-default-text-selection-color-with-css/
+::selection {
+    background: $brand-primary; /* WebKit/Blink Browsers */
+    color: $white;
+}
+
+::-moz-selection {
+    background: $brand-primary; /* Gecko Browsers */
+    color: $white;
+}
+
+a {
+    font-weight: bold;
+}
+
+.code-block {
+    background-color: $code-bg;
+}
+
+xmp {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.code-block .card-block {
+    padding-bottom: 0;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+}
+
+th {
+    font-family: $font-family-alt;
+    font-size: $font-size-lg;
+    color: $brand-primary;
+}
+
+table.table-sm th::before, th::after {
+    bottom: 0.4em !important;
+}
+
+:focus {
+    outline-color: $brand-primary;
+}
+
+.data-table-icon-actions {
+    float: right;
+    margin-top: .2rem !important;
+    //margin-bottom: .5rem;
+    //font-weight: bold;
+    color: $brand-primary;
+}
+
+p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+}
+
+.non-link-header {
+    color: $black;
+}
+
+.non-link-text, .non-link-text:link, .non-link-text:visited, .non-link-text:hover, .non-link-text:active {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none;
+}
+
+.pseudo-link {
+    color: $brand-primary;
+    font-weight: bold;
+}
+
+.pseudo-link:hover {
+    text-decoration: $link-hover-decoration;
+    color: $link-hover-color;
+}
+
+.table-static th {
+    color: $black;
+    font-weight: normal;
+}
+
+.form-control, form-control-lg, form-control-sm {
+    border-color: transparent;
+}
+
+.form-control:focus {
+    background-color: $white;
+}
+
+.custom-control-description {
+    margin-top: 2px; // TODO: make vertical center
+}
+
+select.form-control-sm:not([size]):not([multiple]) {
+    height: 27px;
+}
+
+select.form-control {
+    padding: 3px 5px;
+}
+
+.line-1 {
+    border-top: 1px solid $gray-5;
+}
+
+.line-2 {
+    border-top: 1px solid $black;
+}
+
+.expanding {
+    resize: none;
+}
+
+.field-danger {
+    border: solid 1px $brand-danger !important;
+}
+
+.table > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.table-stripe {
+    background-color: $gray-6;
+}
+
+textarea, select, input, button {
+    font-family: $font-family-sans-serif;
+}
+
+label {
+    margin-bottom: 0;
+}
+
+.card {
+    border: transparent;
+}
+
+.link-plus-text:hover span.pseudo-link {
+    text-decoration: $link-hover-decoration;
+    color: $link-hover-color;
+}
+
+// Chrome has a bug when printing the first letter of header classes. https://github.com/twbs/bootstrap/issues/21771
+.visible-print-inline-block, .visible-print-block, .visible-print-inline h1::first-letter,
+.visible-print-inline-block, .visible-print-block, .visible-print-inline h2::first-letter,
+.visible-print-inline-block, .visible-print-block, .visible-print-inline h3::first-letter,
+.visible-print-inline-block, .visible-print-block, .visible-print-inline h4::first-letter,
+.visible-print-inline-block, .visible-print-block, .visible-print-inline h5::first-letter,
+.visible-print-inline-block, .visible-print-block, .visible-print-inline h6::first-letter {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.table.dataTable {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+div.dataTables_info {
+    padding-top: 0 !important;
+}
+
+.btn-transparent {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+.btn-transparent:hover {
+    box-shadow: inset 0 1px 0 rgba($white,0.2), 0 1px 1px rgba($black,0.8);
+}
+
+a.ActiveHiearchyNode {
+    background-color: $gray-6;
+    padding: 3px;
+}
+
+.body-content {
+    margin-top: 204px;
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 90px;
+    }
+}
+
+.btn-link {
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.btn-link:hover, .btn:hover, a:hover, .link-plus-text:hover {
+    cursor: pointer;
+}
+
+.typeahead {
+    position: relative;
+    color: $black;
+    background-color: $white;
+    -webkit-box-shadow: 4px 4px 12px 2px rgba(0,0,0,0.7);
+    -moz-box-shadow: 4px 4px 12px 2px rgba(0,0,0,0.7);
+    box-shadow: 4px 4px 12px 2px rgba(0,0,0,0.7);
+    overflow-y: auto;
+    max-height: 480px;
+}
+
+/*.typeahead-option:hover {
+    cursor: pointer;
+    background-color: $gray-5;
+}*/
+
+.typeahead-option-selected {
+    background-color: $gray-5;
+}
+
+.typeahead-option-selected:hover {
+    cursor: pointer;
+}
+
+.pseudo-input {
+    border: 1px transparent;
+    padding: 4px 8px 4px 8px;
+    line-height: 1.25;
+}
+
+.btn-no-style {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.btn-anchor {
+    color: $brand-primary;
+    font-weight: bold;
+}
+
+.btn-anchor:hover {
+    color: $link-hover-color;
+}
+
+th:hover {
+    color: $link-hover-color;
+}
+
+.col-xxl-8th {
+    @media (min-width: 1400px) {
+        min-height: 1px;
+        width: 100%;
+        position: relative;
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 12.5%;
+        flex: 0 0 12.5%;
+    }
+}
+
+.tile-shadow {
+    -webkit-box-shadow: 2px 2px 10px -2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 2px 2px 10px -2px rgba(0,0,0,0.6);
+    box-shadow: 2px 2px 10px -2px rgba(0,0,0,0.6);
+}
+
+.tile-shadow:hover {
+    filter: brightness(115%);
+    -webkit-box-shadow: 3px 3px 14px -3px rgba(0,0,0,1);
+    -moz-box-shadow: 3px 3px 14px -3px rgba(0,0,0,1);
+    box-shadow: 3px 3px 14px -3px rgba(0,0,0,1);    
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.row {
+    margin: 0;
+}
+
+.custom-col {
+    padding: 0;
+}

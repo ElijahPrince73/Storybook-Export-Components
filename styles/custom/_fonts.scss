@@ -1,0 +1,21 @@
+﻿@font-face {
+    font-family: 'Ionicons';
+    src: url('/src/styles/fonts/ionicons.eot');
+    src: url('/src/styles/fonts/ionicons.eot?#iefix') format('embedded-opentype'), url('/src/styles/fonts/ionicons.woff') format('woff'), url('/src/styles/fonts/ionicons.ttf') format('truetype'), url('/src/styles/fonts/ionicons.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// ^this is using the whole of ionicons which is heavier than we need. We should create a custom icon font with only what we need (which will be very little since we're using SVG for 99% of icons.)
+
+
+// Main
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,400i,700,700i');
+// runners up: 'PT Sans' and 'Asap'
+
+// Alt
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700,900');
+// runner up: 'Droid Sans'
+
+// Monospace
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');

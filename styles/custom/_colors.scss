@@ -1,0 +1,339 @@
+﻿// Lists of SCSS colors go here
+
+// Text color classes
+
+.text-white {
+    color: $white;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-red {
+    color: $red;
+}
+
+.text-orange {
+    color: $orange;
+}
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-teal {
+    color: $teal;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-purple {
+    color: $purple;
+}
+
+.text-magenta {
+    color: $magenta;
+}
+
+.text-brown {
+    color: $brown;
+}
+
+.text-darkgray {
+    color: $darkgray;
+}
+
+.text-lightgray {
+    color: $lightgray;
+}
+
+// Text gray classes
+
+.text-gray-1 {
+    color: $gray-1;
+}
+
+.text-gray-2 {
+    color: $gray-2;
+}
+
+.text-gray-3 {
+    color: $gray-3;
+}
+
+.text-gray-4 {
+    color: $gray-4;
+}
+
+.text-gray-5 {
+    color: $gray-5;
+}
+
+.text-gray-6 {
+    color: $gray-6;
+}
+
+// text-primary, text-success, text-info, text-warning, text-danger, text-muted are defined in bootstrap
+
+.text-accent {
+    color: $brand-accent;
+}
+
+.text-inverse {
+    color: $brand-inverse;
+}
+
+// Underline color classes
+
+.underline-white {
+    border-bottom: solid 2px $white;
+}
+
+.underline-black {
+    border-bottom: solid 2px $black;
+}
+
+.underline-red {
+    border-bottom: solid 2px $red;
+}
+
+.underline-orange {
+    border-bottom: solid 2px $orange;
+}
+
+.underline-yellow {
+    border-bottom: solid 2px $yellow;
+}
+
+.underline-green {
+    border-bottom: solid 2px $green;
+}
+
+.underline-teal {
+    border-bottom: solid 2px $teal;
+}
+
+.underline-blue {
+    border-bottom: solid 2px $blue;
+}
+
+.underline-purple {
+    border-bottom: solid 2px $purple;
+}
+
+.underline-magenta {
+    border-bottom: solid 2px $magenta;
+}
+
+.underline-brown {
+    border-bottom: solid 2px $brown;
+}
+
+.underline-darkgray {
+    border-bottom: solid 2px $darkgray;
+}
+
+.underline-lightgray {
+    border-bottom: solid 2px $lightgray;
+}
+
+// Underline gray classes
+
+.underline-gray-1 {
+    border-bottom: solid 2px $gray-1;
+}
+
+.underline-gray-2 {
+    border-bottom: solid 2px $gray-2;
+}
+
+.underline-gray-3 {
+    border-bottom: solid 2px $gray-3;
+}
+
+.underline-gray-4 {
+    border-bottom: solid 2px $gray-4;
+}
+
+.underline-gray-5 {
+    border-bottom: solid 2px $gray-5;
+}
+
+.underline-gray-6 {
+    border-bottom: solid 2px $gray-6;
+}
+
+// Link colors
+
+// primary, success, info, warning, danger, inverse, accent
+
+a.text-primary:hover, a.text-primary:active {
+    color: darken($brand-primary, 10%);
+}
+
+a.text-success:hover, a.text-success:active {
+    color: darken($brand-success, 10%);
+}
+
+a.text-info:hover, a.text-info:active {
+    color: darken($brand-info, 10%);
+}
+
+a.text-warning:hover, a.text-warning:active {
+    color: darken($brand-warning, 10%);
+}
+
+a.text-danger:hover, a.text-danger:active {
+    color: darken($brand-danger, 10%);
+}
+
+a.text-inverse:hover, a.text-inverse:active {
+    color: darken($brand-inverse, 10%);
+}
+
+a.text-accent:hover, a.text-accent:active {
+    color: darken($brand-accent, 10%);
+}
+
+// links - colors
+
+a.text-white:hover, a.text-white:active {
+    color: darken($white, 10%);
+}
+
+a.text-black:hover, a.text-black:active {
+    color: lighten($black, 10%);
+}
+
+a.text-red:hover, a.text-red:active {
+    color: darken($red, 10%);
+}
+
+a.text-orange:hover, a.text-orange:active {
+    color: darken($orange, 10%);
+}
+
+a.text-yellow:hover, a.yellow-black:active {
+    color: darken($yellow, 10%);
+}
+
+a.text-green:hover, a.text-green:active {
+    color: darken($green, 10%);
+}
+
+a.text-teal:hover, a.text-teal:active {
+    color: darken($teal, 10%);
+}
+
+a.text-blue:hover, a.text-blue:active {
+    color: darken($blue, 10%);
+}
+
+a.text-purple:hover, a.text-purple:active {
+    color: darken($purple, 10%);
+}
+
+a.text-magenta:hover, a.text-magenta:active {
+    color: darken($magenta, 10%);
+}
+
+a.text-brown:hover, a.text-brown:active {
+    color: darken($brown, 10%);
+}
+
+a.text-darkgray:hover, a.text-darkgray:active {
+    color: darken($darkgray, 10%);
+}
+
+a.text-lightgray:hover, a.text-lightgray:active {
+    color: darken($lightgray, 10%);
+}
+
+// links - grays
+
+a.text-gray-1:hover, a.text-gray-1:active {
+    color: darken($gray-1, 10%);
+}
+
+a.text-gray-2:hover, a.text-gray-2:active {
+    color: darken($gray-2, 10%);
+}
+
+a.text-gray-3:hover, a.text-gray-3:active {
+    color: darken($gray-3, 10%);
+}
+
+a.text-gray-4:hover, a.text-gray-4:active {
+    color: darken($gray-4, 10%);
+}
+
+a.text-gray-5:hover, a.text-gray-5:active {
+    color: darken($gray-5, 10%);
+}
+
+a.text-gray-6:hover, a.text-gray-6:active {
+    color: darken($gray-6, 10%);
+}
+
+// text-primary, text-success, text-info, text-warning, text-danger, text-muted are defined in bootstrap
+
+.border-accent {
+    border: 1px solid $brand-accent;
+}
+
+.border-inverse {
+    border: 1px solid $brand-inverse;
+}
+
+.border-primary {
+    border: 1px solid $brand-primary;
+}
+
+.border-success {
+    border: 1px solid $brand-success;
+}
+
+.border-info {
+    border: 1px solid $brand-info;
+}
+
+.border-warning {
+    border: 1px solid $brand-warning;
+}
+
+.border-danger {
+    border: 1px solid $brand-danger;
+}
+
+.border {
+    border: 1px solid $gray-4;
+}
+
+// backgrounds
+
+.bg-success-light {
+    background-color: $state-success-bg;
+}
+
+.bg-info-light {
+    background-color: $state-info-bg;
+}
+
+.bg-warning-light {
+    background-color: $state-warning-bg;
+}
+
+.bg-danger-light {
+    background-color: $state-danger-bg;
+}
+
+.bg-light-grey {
+    background-color: #646a6c
+}

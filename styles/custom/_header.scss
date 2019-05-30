@@ -1,0 +1,90 @@
+.header {
+    background-color: $gray-1;
+    color: $gray-4;
+}
+
+.header-logo {
+    background-color: $white;
+}
+
+.input-dark .form-control, .input-dark .form-control:focus {
+    background-color: $black;
+    color: $white;
+}
+
+.input-dark .form-control:focus {
+    border-color: $brand-accent;
+}
+
+.loading-bar {
+    border-bottom: solid 4px $brand-accent;
+}
+
+.search-row {
+    // responsive padding to center this row at different widths
+    @include media-breakpoint-down(xl) {
+        padding-top: 16px;
+        //padding-bottom: 18px;
+    }
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(45deg,rgba(0,0,0,.2) 25%,transparent 0,transparent 50%,rgba(0,0,0,.2) 0,rgba(0,0,0,.2) 75%,transparent 0,transparent);
+}
+
+.progress-container {
+    background-color: $white;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 4px;
+}
+
+.progress-loaded-bar {
+    background: $brand-accent;
+    height: 4px;
+    animation: progress 0.8s linear forwards;
+}
+
+.progress-warning-bar {
+    background: $orange;
+    height: 4px;
+    animation: progress 0.1s linear forwards;
+}
+
+@-webkit-keyframes progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.fixed-header {
+    position: fixed;
+    margin-top: -8px;
+    width: 100%;
+    z-index: 1030;
+}
+
+.fixed-header-margin-sidebar {
+    margin-top: 80px !important; // IE has a 4px extra margin than all other browsers
+    @include media-breakpoint-down(xs) {
+        margin-top: 193px !important; // IE has a 4px extra margin than all other browsers
+    }
+}
+
+.fixed-header-margin-main {
+    margin-top: 79px !important; // could be 80px as well, but better aligns elements with a 1px adjustment
+    @include media-breakpoint-down(xs) {
+        margin-top: 0px !important;
+    }
+}
+
+.header-activity-row {
+    margin-top: 10px !important;
+    @include media-breakpoint-down(xs) {
+        margin-top: 48px !important;
+    }
+}
